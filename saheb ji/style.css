@@ -1,10 +1,24 @@
     
   .top-header h1{ 
-    color: rgb(224, 17, 17);
-    font-size: 44px;
+    /*
+Source - https://stackoverflow.com/q/37831837
+Posted by StabDev, modified by community. See post 'Timeline' for change history
+Retrieved 2026-03-07, License - CC BY-SA 3.0
+*/
+
+
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+    font-size: 100px;
     text-align: center ;
     font-weight: bold;
     font-style: italic;
+    /* background: #833AB4;
+background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); */
  }
  .top-header{
     display: flex;
@@ -15,10 +29,13 @@
     padding: 10px;
  }
  .circle-img{
-    width: 80px;
-    height: 80px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     object-fit: cover;
+ }
+ .circle-img:hover{
+    color: #000;
  }
  .navbar{
     border: #111;
@@ -41,18 +58,63 @@
  .nav-links a:hover{
     color: orange;
  }
+.slider{
+width:100%;
+overflow:hidden;
+display:flex;
+justify-content:center;
+}
+
+.slider-track{
+display:flex;
+width:400%;
+animation:slide 12s infinite;
+}
+
+.slider-track img{
+width:100%;
+max-width:400px;
+margin:0 20px;
+border-radius:10px;
+}
+
+@keyframes slide{
+
+0%{transform:translateX(0);}
+
+25%{transform:translateX(-100%);}
+
+50%{transform:translateX(-200%);}
+
+75%{transform:translateX(-300%);}
+
+100%{transform:translateX(0);}
+
+}
  .about-section{
     padding: 60px 20px;
     text-align: center;
-    background: #fcf7f7;
+    border:5px ridge;
+    border-radius: 50px ;
+    box-sizing: border-box ;
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+ }
+ .about-section p{
+    -webkit-text-fill-color:  #0df39b;;
  }
  .program-section{
     padding: 60px 20px;
-    text-align: center;
+    text-align: center; 
+ }
+ .program-section h2{ 
+    display: flex;
+    justify-content:center;
+
  }
  .program-container{
     display: flex;
-    justify-content: center;
+    justify-content:center ;
     gap: 30px;
     flex-wrap: wrap;
  }
@@ -64,9 +126,39 @@
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     transition: 0.3s;
  }
- .card :hover{
+ .card:hover{
     transform: scale(1.05);
- }
+}
+.youtube{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 80px
+}
+.youtube a{
+text-decoration:none;
+}
+.prasoon{ display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column; 
+    background: #eee;
+    padding: 40px 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(223, 20, 20, 0.2);
+    transition:0.3s; 
+}
+.fa-youtube{
+    font-size: 50px;
+    color: #f22;
+    margin:16px;
+}
+.prasoon:hover{
+    transform: scale(1.05);
+}
  .gallary-section{
     padding: 60px 20px;
     text-align: center;
@@ -120,20 +212,41 @@
     100%{ top:110%; transform:translateX(50px); }
   }
   /* Mobile Navbar Fix */
-@media (max-width: 768px) {
+  @media (max-width:768px)
+  {
 
-    .nav-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-links a {
-        padding: 8px 10px;
-        font-size: 14px;
-    }
-
+.top-header{
+flex-direction:column;
+text-align:center;
 }
+
+.nav-links{
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.circle-img{
+width:200px;
+height:200px;
+}
+
+.program-container{
+flex-direction:column;
+align-items:center;
+}
+
+.gallary-row{
+flex-direction:column;
+align-items:center;
+}
+
+.youtube{
+flex-direction:column;
+align-items:center;
+}
+
+ }
 /* About ka  css code*/
  body{
     margin: 0; 
@@ -178,6 +291,9 @@
  }
  .about-text {
     text-align:center ; 
+    border: 5px,ridge red; 
+    box-sizing: border-box;
+     border-radius:50px ;
     color: rgba(17, 162, 167, 0.953);
     font-size: 23px;
     font-weight: bold;
@@ -204,18 +320,12 @@
     color: orange;
  }
  body{
-    margin:0;
+    margin:20px;
     font-family: Arial, sans-serif;
     text-align:center;
 }
 
 /* Header */
-.header h1{
-padding: 30px;
-    
-    color:rgb(241, 212, 21);
-}
-
 /* Invitation Section */
 .invitation p{
     padding:40px 20px; 
@@ -299,7 +409,8 @@ body{
     border:5px ridge,rgb(14, 207, 17);
     border-radius: 50px ;
     box-sizing: border-box ;
-    background-color: rgb(177, 214, 241);
+    background: #22C1C3;
+background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
     font-weight: bold;
     color:rgb(86, 9, 201);
 }
