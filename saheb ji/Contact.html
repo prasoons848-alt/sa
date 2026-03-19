@@ -4,25 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact - Kabir Mandir Rewa</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Contact.css">
+<link rel="stylesheet" href="common.css">
 </head>
 
 <body>
-
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="Events.html">Events</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="Contact.html">Contact</a>
-    </div>
-</nav>
-
-<!-- ===== HEADER ===== -->
 <header class="header">
+<!-- ===== NAVBAR ===== -->
+<div class="navbar">
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Events.html">Events</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+</div>
+<div class="logo">
     <h1>Contact Us</h1>
+</div>
 </header>
 
 <!-- ===== CONTACT INFO ===== -->
@@ -76,6 +82,7 @@
          Reserved</p>
     <p>Developed by Kabir Mandir Team</p>
 </footer>
+<script src="common.js"></script>
 
 </body>
 </html>

@@ -7,19 +7,26 @@
         <title>
             KABIR MANDIR REWA 
         </title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="Home.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="common.css">
     </head>
     <body>
-        <nav class="navbar">
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="About.html">About</a>
-        <a href="Events.html">Events</a>
-        <a href="Gallery.html">Gallary</a>
-        <a href="Contact.html">Contact</a>
-    </div>
-    </nav>
+<div class="navbar">
+
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Events.html">Events</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+</div>
     <header class="top-header">  
         <img src="image/kabir_saheb.jpg" class="circle-img"> 
         <h1><strong> सद्‌गुरु कबीर संस्थान फोर्ट रोड रीवा (म.प्र.) </strong></h1>
@@ -54,8 +61,6 @@
             href="https://youtube.com/@kabirmandirrewam.p?si=bu2mQWXHg4OawmZC" target="_blank">
 
             <i class=" fa-brands fa-youtube"></i>
-
-            <p1>यहाँ क्लिक करें</p1>
             </a>
             </div>
     </section>
@@ -85,5 +90,6 @@
     <audio autoplay loop hidden>
         <source src="audio/SANSO.mp3" type="audio/mp3">
     </audio>
+    <script src="common.js"></script>
     </body>
 </html>

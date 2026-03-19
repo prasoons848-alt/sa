@@ -1,0 +1,91 @@
+.logo{
+    text-align:center;
+
+    border:5px ridge,rgb(14, 207, 17);
+    border-radius: 50px ;
+    box-sizing: border-box ;
+    background: #22C1C3;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    font-weight: bold;
+    color:rgb(86, 9, 201);
+     margin-top:20px;
+}
+.contact-info{
+    text-align:center;
+    padding:40px 20px;
+     font-size: 20px;
+}
+.contact-info h2{
+    color: rgb(247, 15, 111); 
+    font-size:50px; ;
+}
+
+.contact-link{
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.contact-link:hover{
+    color:rgb(53, 12, 235) ;
+}
+
+/* ===== CONTACT FORM ===== */
+.contact-form{
+    text-align:center;
+    padding:40px 20px;
+    background:#f5f5f5;
+}
+.contact-form h2{
+    color: rgb(247, 15, 111);
+    font-size: 40px;
+}
+
+.contact-form form{
+    max-width:400px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.contact-form button{
+    padding:10px;
+    background:orange;
+    border:none;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+.contact-form button:hover{
+    background:rgb(67, 10, 225);
+}
+
+/* ===== MAP ===== */
+.map{
+    padding:40px 20px;
+    text-align:center;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+.body{
+    margin: 0px;
+    padding: 0px;
+}
+ 

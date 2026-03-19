@@ -4,20 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Kabir Mandir Rewa</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Events.css">
+<link rel="stylesheet" href="common.css">
 </head>
 
 <body>
-    <nav class="navbar">
-    <div class="nav-container">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="Events.html">Events</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="Contact.html">Contact</a>
-    </div>
-</nav>
+<div class="navbar">
 
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Events.html">Events</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+</div>
 <!-- ===== HEADING ===== -->
 <header class="header">
     <h1>Kabir Mandir Rewa 
@@ -64,8 +70,9 @@
     </div>
 
 </section>
-<footer> © 2026 Kabir Mandir Rewa | All Rights Reserved
+<footer class="footer"> © 2026 Kabir Mandir Rewa | All Rights Reserved
 </footer>
+<script src="common.js"></script>
 
 </body>
 </html>

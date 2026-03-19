@@ -1,0 +1,43 @@
+/* About ka  css code*/
+ body{
+    margin: 0; 
+    padding: 0;
+ } 
+ h1{
+   text-align:center;
+    padding:20px;
+    border:5px ridge,rgb(14, 207, 17);
+    border-radius: 50px ;
+    box-sizing: border-box ;
+    background: #22C1C3;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    font-weight: bold;
+    color:rgb(86, 9, 201);
+}
+
+   .page-title h2 {
+    text-align: center; 
+    color: rgb(247, 15, 111);
+    font-style: italic; 
+    font-size:44px ;
+    font-weight: bold;
+ }
+ .about-image img{
+    height:auto ;
+     width:100%;
+ }
+ .about-text {
+    text-align:center ; 
+    border: 5px,ridge red; 
+    box-sizing: border-box;
+     border-radius:50px ;
+    color: rgba(17, 162, 167, 0.953);
+    font-size: 23px;
+    font-weight: bold;
+ }
+ .footer{
+   text-align: center;
+   background: #111;
+   color: white;
+   padding: 10px;
+ }

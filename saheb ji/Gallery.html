@@ -4,27 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gallery - Kabir Mandir Rewa</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="Galleary.css">
+<link rel="stylesheet" href="common.css">
 </head>
 
 <body>
+<div class="navbar">
 
-<!-- ===== NAVBAR ===== -->
-<nav class="navbar">
-    <div class="nav-container">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="Events.html">Events</a>
-        <a href="Gallary.html">Gallery</a>
-        <a href="Contact.html">Contact</a>
-    </div>
-</nav>
+  <div class="menu-icon" onclick="toggleMenu()">
+    ☰
+  </div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="index.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Events.html">Events</a>
+    <a href="Gallery.html">Gallery</a>
+    <a href="Contact.html">Contact</a>
+  </div>
+
+</div>
 
 <!-- ===== HEADING ===== -->
 <header class="header">
     <h1>Photo Gallery</h1>
-</header>
  <h2>पुरानी स्मृतियाँ</h2>
+</header>
 <!-- ===== SMALL IMAGES ===== -->
 <section class="gallery">
 
@@ -269,14 +274,10 @@
     <a href="#" class="close">×</a>
     <img src="imh5_(7).jpg">
 </div> 
-<section>
- <video controls>
-    <source >
- </video>
 
-</section>
 
-<footer> © 2026 Kabir Mandir Rewa | All Rights Reserved
+<footer class="footer"> © 2026 Kabir Mandir Rewa | All Rights Reserved
 </footer>
+<script src="common.js"></script>
 </body>
 </html>

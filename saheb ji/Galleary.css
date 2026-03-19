@@ -1,0 +1,80 @@
+* Gallary 
+body{
+    margin:0px;
+    padding: 0px;
+}
+.header h1{
+    text-align:center;
+    padding:20px;
+    border:5px ridge,rgb(14, 207, 17);
+    border-radius: 50px ;
+    box-sizing: border-box ;
+    background: #22C1C3;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+    font-weight: bold;
+    color:rgb(86, 9, 201);
+}
+header h2{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(247, 15, 111);;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 photos per row */
+    gap: 15px;
+    padding: 40px;
+}
+
+.gallery img{
+    width: 100%;
+    height: 200px;      /* Same height */
+    object-fit: cover;  /* Proper crop */
+    border-radius: 10px;
+}
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* ===== POPUP ===== */
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+}
+
+.popup img{
+    max-width:80%;
+    max-height:80%;
+    border-radius:10px;
+}
+
+/* Show popup when targeted */
+.popup:target{
+    display:flex;
+}
+
+/* Close Button */
+.close{
+    position:absolute;
+    top:20px;
+    right:40px;
+    color:rgb(231, 231, 220);
+    font-size:40px;
+    text-decoration:none;
+}
+.footer{
+    background: #111;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-bottom:0;
+}
