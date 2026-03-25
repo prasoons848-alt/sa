@@ -28,12 +28,23 @@
  }
  .about-text {
     text-align:center ; 
-    border: 5px,ridge red; 
+    border: 10px,ridge #e90404; 
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     box-sizing: border-box;
-     border-radius:50px ;
+    border-radius:50px ;
     color: rgba(17, 162, 167, 0.953);
     font-size: 23px;
     font-weight: bold;
+ }
+  .name-list{
+   list-style-position: inside;
+   display: inline-block;
+   padding: 0;
+   margin: 20px auto;
+   text-align: left;
+ } 
+ .name-list li{
+   margin:  10px;
  }
  .footer{
    text-align: center;
