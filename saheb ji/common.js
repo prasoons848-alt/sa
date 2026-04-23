@@ -88,3 +88,15 @@ document.body.addEventListener("touch stsrt", () =>
 {
   music.play();
 },{ once: true});
+
+
+//book section
+function buyBook(name){
+  let number = "918085509783";  // 🔥 अपना WhatsApp number (91 + number)
+
+  let message = "साहेब बंदगी" + name;
+
+  let url = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
+
+  window.open(url, "_blank");
+}

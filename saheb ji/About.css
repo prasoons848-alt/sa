@@ -38,13 +38,34 @@
  }
   .name-list{
    list-style-position: inside;
-   display: inline-block;
    padding: 0;
-   margin: 20px auto;
-   text-align: left;
+   margin: 20px auto ;
  } 
  .name-list li{
-   margin:  10px;
+   margin:  10px;  
+   display: grid;
+   place-items: center;
+ }
+ .book-section{
+  border: #22C1C3 10px,ridge ;
+ }
+ .book-section h2{
+  color:rgb(247, 15, 111);
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+ }
+ .book-section ul li {
+  font-size: 20px;
+  color: rgb(17, 162, 167);
+  font-weight: bold;
+  margin: 10px; 
+  border: #0c98d4 5px,ridge ;
+  border-radius: 20px;
+  padding: 10px;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  text-align: center;
+
  }
  .footer{
    text-align: center;
