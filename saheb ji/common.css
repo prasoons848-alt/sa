@@ -66,3 +66,6 @@ body{
 .nav-links a:hover{
     color: orange;
 }
+html{ 
+  scroll-behavior: smooth;
+}

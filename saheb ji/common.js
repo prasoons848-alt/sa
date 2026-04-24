@@ -94,7 +94,7 @@ document.body.addEventListener("touch stsrt", () =>
 function buyBook(name){
   let number = "918085509783";  // 🔥 अपना WhatsApp number (91 + number)
 
-  let message = "साहेब बंदगी" + name;
+  let message = "साहेब बंदगी ::" + name;
 
   let url = "https://wa.me/" + number + "?text=" + encodeURIComponent(message);
 

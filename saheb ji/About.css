@@ -67,6 +67,13 @@
   text-align: center;
 
  }
+ .book-section a {
+   text-transform: none;
+   color: inherit;
+ }
+ .book-section a:hover {
+   color: rgb(89, 0, 255);
+ }
  .footer{
    text-align: center;
    background: #111;
