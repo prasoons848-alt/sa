@@ -190,6 +190,17 @@ text-decoration:none;
     object-fit: cover;
     border-radius: 8px;
  }
+ .book {
+   display: flex;
+   justify-content: center;
+   display: grid;
+   column-gap: 10px;
+   gap: 20px;
+ } .book h2{
+   color:rgb(247, 15, 111); 
+   font-size: 40px;
+   
+ }
  footer{
     background: #111; 
     color: white;
