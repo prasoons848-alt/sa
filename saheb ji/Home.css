@@ -194,8 +194,8 @@ text-decoration:none;
    display: flex;
    justify-content: center;
    display: grid;
-   column-gap: 10px;
-   gap: 20px;
+   column-gap: 30px;
+   gap: 60px;
  } .book h2{
    color:rgb(247, 15, 111); 
    font-size: 40px;
